@@ -76,6 +76,29 @@ const companies= [
 
 //Get companies that lasted 10 years or more
 
-const longLastingCompanies = companies.filter(company => (company.end - company.start >= 10));
+// const longLastingCompanies = companies.filter(company => (company.end - company.start >= 10));
 
-console.log(longLastingCompanies);
+// console.log(longLastingCompanies);
+
+//Map- create a new array from an existing array or object
+
+//Create array of company names
+
+// const companyNames = companies.map(function(company) {
+//   return company.name;
+// });
+
+// console.log(companyNames);
+
+// const testMap = companies.map(function(company) {
+//   return `${company.name} [${company.start} - ${company.end}]`;
+// });
+
+// console.log(testMap);
+
+
+// const testMap = companies.map(function(company) {
+//   return 1;
+// });
+
+// console.log(testMap);
