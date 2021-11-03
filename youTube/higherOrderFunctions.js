@@ -117,6 +117,37 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 // console.log(agesSquare);
 
-const agesTimesTwo = ages.map(age => age * 2);
+// const agesTimesTwo = ages.map(age => age * 2);
 
-console.log(agesTimesTwo);
+// console.log(agesTimesTwo);
+
+//Can do two maps at a time
+
+// const ageMap = ages
+//   .map(age => Math.sqrt(age))
+//   .map(age => age * 2);
+
+//   console.log(ageMap);
+
+//sort
+
+//sort companies by comparing them, takes in two values and compares them returning 1 or -1 to move the values up or down in the array
+
+//c1 and c2 are variables that you can set, they represent companies, you can call them what you want, usually they are called a and b
+
+// const sortedCompanies = companies.sort(function(c1, c2){
+//   if(c1.start > c2.start) {
+//     return 1;
+//   } else {
+//     return -1
+//   }
+// });
+
+// console.log(sortedCompanies);
+
+//ES 6 Arrow syntax, using ternary operator instead of if else statement, ? is the condition where we want to return true, : is similar to else, what comes after : is the else statement
+
+// const sortedCompanies = companies.sort((a,b) => (a.start > b.start ? 1 : -1));
+
+// console.log(sortedCompanies);
+
