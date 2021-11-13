@@ -133,6 +133,8 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 //sort companies by comparing them, takes in two values and compares them returning 1 or -1 to move the values up or down in the array
 
+//sort companies by start year
+
 //c1 and c2 are variables that you can set, they represent companies, you can call them what you want, usually they are called a and b
 
 // const sortedCompanies = companies.sort(function(c1, c2){
@@ -151,3 +153,33 @@ const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
 // console.log(sortedCompanies);
 
+//sort ages
+
+// const sortAges = ages.sort((a,b) => a - b); //sorts ages in ascending order, to do in descending order use b - a
+
+// console.log(sortAges);
+
+//reduce
+
+//add ages together with for loop
+
+// let ageSum = 0;
+// for(let i = 0; i < ages.length; i++) {
+//   ageSum += ages[i]
+// }
+
+// console.log(ageSum)
+
+// add ages together using reduce
+
+// const ageSum = ages.reduce(function(total, age) {
+//   return total + age;
+// }, 0); //going to take a second parameter of the total, which will start at 0
+
+// console.log(ageSum);
+
+//shorter version
+
+const ageSum = ages.reduce((total, age) => total + age, 0);
+
+console.log(ageSum);
